@@ -36,6 +36,6 @@ vehicle_registrations_ca <- get_cansim_connection(table_id) %>%
 
 ####################################################################################
 # export data
-write.csv(vehicle_registrations, "2 - output/ev_regist_canada_total.csv", row.names = TRUE)
-write.csv(vehicle_registrations_ca, "2 - output/ev_regist_canada.csv", row.names = TRUE)
+write.csv(vehicle_registrations, "2 - output/ev_regist_canada_total.csv", row.names = FALSE)
+write.csv(vehicle_registrations_ca, "2 - output/ev_regist_canada.csv", row.names = FALSE)
 
